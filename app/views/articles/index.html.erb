@@ -1,3 +1,7 @@
-<% @articles.each do |article| %>
-  <div><%= article.title %></div>
-<% end %>
+
+<div>
+  <% @articles.each do |article| %>
+    <div><h1><%= link_to article.title.to_s, article_path(article) %></h1></div>
+  <% end %>
+</div>
+<h2><%= link_to "Create Article", new_article_url %></h2>
