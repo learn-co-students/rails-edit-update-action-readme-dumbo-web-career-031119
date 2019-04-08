@@ -1,0 +1,12 @@
+<%= form_for @article , method: "patch" do |form| %>
+<%= form.label :title %>
+<%= form.text_field :title %>
+<br>
+<%= form.label :description %>
+<%= form.text_field :description %>
+<%= form.submit "Submit Article" %>
+
+
+
+
+<% end %>
